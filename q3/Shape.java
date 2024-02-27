@@ -1,4 +1,4 @@
-public abstract class Shape {
+public abstract class Shape implements Element{
 	private int xPos, yPos;
 	
 
@@ -17,7 +17,5 @@ public abstract class Shape {
 	public void setyPos(int yPos) {
 		this.yPos = yPos;
 	}
-
-	public abstract void accept(Visitor visitor);
 
 }
